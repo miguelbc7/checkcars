@@ -1,0 +1,30 @@
+.tabs-footer{
+    ion-tab-bar{
+        --background: #828282;
+        padding: 5px 20%;
+        ion-tab-button{
+            
+            &:nth-child(odd){
+                border-right: 1px solid #fff;
+                border-left: 1px solid #fff;
+            }
+        }
+        ion-tab-button.tab-selected{
+           img{
+                transform: scale(1.2);
+           }
+        }
+    }
+    img{
+        width: 35px;
+        object-fit: contain;
+        transition: 0.3s ease;
+        transition-property: all;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+        @media (max-width: 340px){
+            width: 32.5px;
+        }
+    }
+}

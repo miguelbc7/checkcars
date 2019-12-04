@@ -1,0 +1,58 @@
+.navbar{
+    &:after{
+        background-image: none !important;
+    }
+    ion-toolbar{
+        --background: #f2f2f2; 
+        --color: var(--cyan);
+        --border-width: 0;
+        ion-title{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: "Nunito", sans-serif;
+            font-weight: bold;
+            font-size: 24px;
+            @media (max-width: 340px){
+                font-size: 18px;
+            }
+        }   
+    }
+}
+
+ion-content{
+    --background: #f2f2f2;
+    height: 100%;
+    .bodyRecord{
+        padding: 20px;
+        ion-list{
+            background: transparent;
+            ion-item{
+                --background: transparent;
+                border-bottom: 1px solid #c1c1c1;
+                &:last-child{
+                    border-bottom: none;
+                }
+                ion-label{
+                    margin: 5px auto;
+                    color: #343434;
+                    @media (max-width: 340px){
+                        font-size: 12px;
+                    }
+                }
+                p{
+                    color: var(--cyan);
+                    max-width: 70%;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    margin: 5px auto;
+                    @media (max-width: 340px){
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

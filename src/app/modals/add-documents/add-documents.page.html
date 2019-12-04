@@ -1,0 +1,34 @@
+<ion-content class="ModalDocs">
+  <div class="body">
+    <ion-list >
+      <ion-item class="ion-no-padding" lines="none"> 
+        <ion-label mode="" position="stacked">Descripción</ion-label>
+        <div class="inline">
+          <ion-input type="text" placeholder="18 de Noviembre 2019"></ion-input>
+          <label for="fileID" class="fileBtn">
+            <img src="/assets/general/camara.svg" alt="">
+            <input type="file" id="fileID">
+          </label>
+        </div>
+      </ion-item>
+      <div class="boxImage">
+        <img src="/assets/general/imageNothing.png" alt="">
+      </div>
+      <ion-item class="ion-no-padding" lines="none"> 
+        <ion-label mode="" position="stacked">Fecha de expedición</ion-label>
+        <ion-input type="date" placeholder="18 de Noviembre 2019"></ion-input>
+      </ion-item>
+      <ion-item class="ion-no-padding" lines="none"> 
+        <ion-label mode="" position="stacked">Fecha de vencimiento</ion-label>
+        <ion-input placeholder="Michael Shumacher"></ion-input>
+      </ion-item>
+      <ion-item mode="ios" class="toggle">
+        <ion-label>Activar alerta de vencimiento</ion-label>
+        <ion-toggle color="success" mode="ios"></ion-toggle>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
+<ion-footer class="modal-footer">
+  <ion-button class="create">Crear</ion-button>
+</ion-footer>

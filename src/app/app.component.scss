@@ -1,0 +1,40 @@
+.mainMenu{
+    ion-toolbar{
+        --background: var(--primary);
+        --padding-start: 15px;
+        --padding-end: 15px;
+        .toolbar-background{
+            background: var(--primary);
+        }
+    }
+    .boxPerfil{
+        width: 100px;
+        height: 100px;
+        margin: 25px auto 0;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+    .titleUSer{
+        text-align: center;
+        font-size: 22px;
+        margin: 5px 0;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+         overflow: hidden;
+         color: #fff;
+    }
+
+    ion-content{
+        --padding-top: 15px;
+        --padding-bottom: 15px;
+        --padding-start: 15px;
+        --padding-end: 15px;
+
+        .logout{
+            color: var(--primary);
+        }
+    }
+}

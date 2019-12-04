@@ -1,0 +1,27 @@
+.box-card{
+    padding: 25px 15px;
+    .info-card{
+        background-color: #f2f2f2;
+        border-left: 8px solid var(--cyan);
+        padding: 5px 10px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        img{
+            width: 45px;
+        }
+        .title{
+            color: var(--cyan);
+            font-weight: bold;
+            font-size: 18px;
+            padding: 0 15px;
+            font-family: 'Nunito', sans-serif;
+        }
+        ion-icon{
+            margin-left: auto;
+            font-size: 31px;
+            color: #343434;
+            font-weight: bold;
+        }
+    }
+}

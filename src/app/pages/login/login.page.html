@@ -1,0 +1,23 @@
+<ion-content class="login">
+  <div class="background">
+    <div class="box-login">
+      <div class="box-logo">
+        <img src="https://image.shutterstock.com/image-vector/shield-letter-s-logosafesecureprotection-logomodern-260nw-633031571.jpg" alt="">
+        <h5>Checkars</h5>
+      </div>
+      <ion-item>
+        <ion-icon name="mail"></ion-icon>
+        <ion-input placeholder="Correo electrónico"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="unlock"></ion-icon>
+        <ion-input type="password" placeholder="Contraseña"></ion-input>
+      </ion-item>
+      <div class="group-btn">
+        <ion-button class="acept " [routerLink]="['/tabs']">Aceptar</ion-button>
+        <ion-button class="facebook"><img src="assets/general/facebook.svg" alt=""></ion-button>
+        <ion-button class="google"><img src="assets/general/google.svg" alt=""></ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>

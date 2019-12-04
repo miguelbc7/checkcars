@@ -1,0 +1,7 @@
+{
+  "name": "CHECKARS",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

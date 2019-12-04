@@ -1,0 +1,94 @@
+<ion-header class="navbar">
+  <ion-toolbar>
+      <ion-buttons slot="start" id="content">
+          <ion-menu-button autoHide="false"></ion-menu-button>
+        </ion-buttons>
+    <ion-title>
+      Checkcar's
+    </ion-title>
+  </ion-toolbar>
+  <div class="footHeader">
+    <div class="infoCard">
+      <img src="/assets/general/carro.svg" alt="">
+      <h5>XYS-23A</h5>
+    </div>
+    <ion-segment mode="md" [(ngModel)]="viewMode">
+      <ion-segment-button mode="md" value="first">
+        <ion-label>Revisión</ion-label>
+      </ion-segment-button>
+      <ion-segment-button mode="md" value="second">
+        <ion-label>Documentos</ion-label>
+      </ion-segment-button>
+      <ion-segment-button mode="md" value="third">
+        <ion-label>Mantenimiento</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+</ion-header>
+<ion-content>
+  <div class="bodyContent">
+      <div class="bodySegment" *ngIf="viewMode === 'first'">
+        <div class="body">
+          <ion-list >
+            <ion-item class="ion-no-padding" lines="none"> 
+              <ion-label mode="" position="stacked">Desde</ion-label>
+              <ion-input type="date" placeholder="18 de Noviembre 2019"></ion-input>
+            </ion-item>
+            <ion-item class="ion-no-padding" lines="none"> 
+              <ion-label mode="" position="stacked">Hasta</ion-label>
+              <ion-input type="date" placeholder="18 de Noviembre 2019"></ion-input>
+            </ion-item>
+            <ion-item class="ion-no-padding" lines="none"> 
+              <ion-label mode="" position="stacked">Conductor asignado</ion-label>
+              <ion-input placeholder="Michael Shumacher"></ion-input>
+            </ion-item>
+            <ion-item class="ion-no-padding" lines="none"> 
+              <ion-label mode="" position="stacked">Kilometraje</ion-label>
+              <ion-input type="number" placeholder="200.000"></ion-input>
+            </ion-item>
+          </ion-list>
+        </div>
+      </div>
+      <div class="bodySegment" *ngIf="viewMode === 'second'">
+        <div class="body documents">
+          <div class="item">
+            <h5>Soat</h5>
+            <img src="/assets/general/btnVerde.svg" alt="">
+          </div>
+          <div class="item">
+            <h5>Texnomecanica</h5>
+            <img src="/assets/general/btnAmarillo.svg" alt="">
+          </div>
+          <div class="item">
+            <h5>Permisos</h5>
+            <img src="/assets/general/btnRojo.svg" alt="">
+          </div>
+          <!-- <button class="btnMore" (click)="addDocuments()">+</button> -->
+          <ion-fab (click)="addDocuments()">
+            <ion-fab-button>+</ion-fab-button>
+          </ion-fab>
+        </div>
+      </div>
+      <div class="bodySegment" *ngIf="viewMode === 'third'">
+        <div class="body mantenimiento">
+          <div class="item" (click)="detailsMantenimiento()">
+            <img src="/assets/general/arrow.svg" alt="">
+            <h5>18 de Noviembre de 2019</h5>
+          </div>
+          <div class="item" (click)="detailsMantenimiento()">
+            <img src="/assets/general/arrow.svg" alt="">
+            <h5>18 de Noviembre de 2019</h5>
+          </div>
+          <div class="item" (click)="detailsMantenimiento()">
+            <img src="/assets/general/arrow.svg" alt="">
+            <h5>18 de Noviembre de 2019</h5>
+          </div>
+          <!-- <button class="btnMore" >+</button> -->
+        </div>
+        <ion-fab (click)="addDocumentsMaintenance()">
+          <ion-fab-button>+</ion-fab-button>
+        </ion-fab>
+      </div>
+  </div>
+ 
+</ion-content>
