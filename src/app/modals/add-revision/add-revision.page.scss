@@ -1,0 +1,76 @@
+//First segment
+.bodyRevision{
+    --background: #f2f2f2;
+    .bodyy{
+        padding: 20px;
+        ion-list{
+            background: transparent;
+            ion-item{
+                --padding-start: 0px;
+                --padding-end: 0px;
+                --inner-padding-end: 0px;
+                --padding-start:0px;
+                margin-bottom: 10px;
+                --background: transparent;
+    
+                ion-label{
+                    font-size: 16px;
+                    margin-bottom: 5px;
+                    transform: none;
+                    color: #000;
+                }
+                ion-input{
+                    border: 1px solid #c1c1c1;
+                    padding-inline-start: var(--padding-start);
+                    --padding-end: 15px;
+                    --padding-start: 15px;
+                    --padding-top: 5px;
+                    --padding-bottom: 5px;
+                    background: #fff;
+                    border-radius: 10px;
+                    font-size: 14px;
+                    color: #666;
+                    input{
+                        padding: 0; 
+                    }
+                }
+            }
+            ion-item.ion-focusable{
+                --border-color: transparent;
+                ion-label{
+                    color: #000 !important;
+                }
+                ion-input{
+                    --border-bottom: none !important;
+                }
+    
+            }
+        }
+        .btnMore{
+            background-color: transparent;
+            width: 32px;
+            height: 22px;
+            background-color: #777;
+            font-size: 29px;
+            color: #fff;
+            padding: 0;
+            line-height: 22px;
+            margin-left: 5px;
+            margin-top: 30px;
+        }
+    }
+}
+.modal-footer2{
+    padding: 20px;
+    background-color: #f2f2f2;
+    .btnSave{
+        --background: var(--cyan);
+        --background-focused: var(--cyan);
+        --background-hover: var(--cyan);
+        --background-activated: var(--cyan);
+        width: 100%;
+    }
+    .activated{
+
+    }
+}

@@ -12,6 +12,10 @@ import { AddDocumentsPageModule } from './modals/add-documents/add-documents.mod
 import { AddMaintenancePageModule } from './modals/add-maintenance/add-maintenance.module';
 import { DetailsRecordPageModule } from './modals/details-record/details-record.module';
 import { DetailsMaintenancePageModule } from './modals/details-maintenance/details-maintenance.module';
+import { DetailRevisionPageModule } from './modals/detail-revision/detail-revision.module';
+import { AddRevisionPageModule } from './modals/add-revision/add-revision.module';
+import { AddConductoresPageModule } from './modals/add-conductores/add-conductores.module';
+import { AddVehiculosPageModule } from './modals/add-vehiculos/add-vehiculos.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -23,7 +27,12 @@ import { DetailsMaintenancePageModule } from './modals/details-maintenance/detai
     AddDocumentsPageModule,
     AddMaintenancePageModule,
     DetailsRecordPageModule,
-    DetailsMaintenancePageModule
+    DetailsMaintenancePageModule,
+    DetailRevisionPageModule,
+    AddRevisionPageModule,
+    AddRevisionPageModule,
+    AddConductoresPageModule,
+    AddVehiculosPageModule
   ],
   providers: [
     StatusBar,

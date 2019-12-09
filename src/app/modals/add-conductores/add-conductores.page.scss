@@ -1,0 +1,118 @@
+.ModalDocs{
+    --padding-start: 20px;
+    --padding-end: 20px;
+    --padding-top: 20px;
+    --padding-bottom: 20px;
+    --background: #f2f2f2;
+    .body{
+        ion-list{
+            background: transparent;
+            margin-bottom: 0;
+            ion-item{
+                --padding-start: 0px;
+                --padding-end: 0px;
+                --inner-padding-end: 0px;
+                --padding-start:0px;
+                margin-bottom: 10px;
+                --background: transparent;
+                .dflex{
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    ion-button{
+                        --background: #f2f2f2;
+                        --background-focused: #f2f2f2;
+                        --background-hover: #f2f2f2;
+                        --background-activated: #f2f2f2;
+                        --color: var(--primary);
+                        --color-activated: var(--primary);
+                        --color-focused: var(--primary);
+                        border: 1px solid #c1c1c1;
+                        border-radius: 5px;
+                        margin-left: 5px !important;
+                        margin: 0;
+                        height: 30px;
+                    }
+                }
+                ion-label{
+                    font-size: 16px;
+                    margin-bottom: 5px;
+                    transform: none;
+                    color: #000;
+                }
+                .inline{
+                    display: flex;
+                    width: 100%;
+                    ion-input{
+                        width: 90%;
+                    }
+                    .fileBtn{
+                        background-color: transparent;
+                        margin: auto 5px auto 10px;
+                        img{
+                            width: 24px;
+                            transform: scale(3.4);
+                            margin-top: 5px;
+                        }
+                        input{
+                            display: none;
+                        }
+                    }
+                }
+               
+                ion-input{
+                    border: 1px solid #c1c1c1;
+                    padding-inline-start: var(--padding-start);
+                    --padding-end: 15px;
+                    --padding-start: 15px;
+                    --padding-top: 5px;
+                    --padding-bottom: 5px;
+                    background: #fff;
+                    border-radius: 10px;
+                    font-size: 14px;
+                    color: #666;
+                    height: 34px;
+                    input{
+                        padding: 0; 
+                    }
+                }
+            }
+            ion-item.ion-focusable{
+                --border-color: transparent;
+                ion-label{
+                    color: #000 !important;
+                }
+                ion-input{
+                    --border-bottom: none !important;
+                }
+    
+            }
+            .boxImage{
+                background-color: #fff;
+                width: 80px;
+                height: 80px;
+                margin: 5px auto 10px;
+                box-shadow: 2px 2px 2px #c1c1c1;
+                img{
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+    .toggle{
+        --background-checked: #10dc60 !important;
+    }
+}
+
+.modal-footer{
+    padding: 20px;
+    background-color: #f2f2f2;
+    .create{
+        --background: var(--cyan);
+        --background: var(--cyan);
+        --background-focused: var(--cyan);
+        --background-hover: var(--cyan);
+        --background-activated: var(--cyan);
+        width: 100%;
+    }
+}

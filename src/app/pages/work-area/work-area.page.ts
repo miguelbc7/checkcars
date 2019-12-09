@@ -4,6 +4,8 @@ import { ModalController } from '@ionic/angular';
 import { AddDocumentsPage } from '../../modals/add-documents/add-documents.page';
 import { AddMaintenancePage } from '../../modals/add-maintenance/add-maintenance.page';
 import { DetailsMaintenancePage } from '../../modals/details-maintenance/details-maintenance.page';
+import { DetailRevisionPage } from '../../modals/detail-revision/detail-revision.page';
+import { AddRevisionPage } from '../../modals/add-revision/add-revision.page';
 
 @Component({
   selector: 'app-work-area',
@@ -39,6 +41,22 @@ export class WorkAreaPage implements OnInit {
     const modal = await this.modalController.create({
       component: DetailsMaintenancePage,
       cssClass: 'modalDetails'
+    });
+    return await modal.present();
+  }
+
+  async detailsRevision() {
+    const modal = await this.modalController.create({
+      component: DetailRevisionPage,
+      cssClass: 'modalDetailsRevision'
+    });
+    return await modal.present();
+  }
+
+  async AddRevision() {
+    const modal = await this.modalController.create({
+      component: AddRevisionPage,
+      cssClass: 'modalRevision'
     });
     return await modal.present();
   }

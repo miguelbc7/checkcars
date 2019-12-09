@@ -37,6 +37,22 @@ const routes: Routes = [
   {
     path: 'details-maintenance',
     loadChildren: () => import('./modals/details-maintenance/details-maintenance.module').then( m => m.DetailsMaintenancePageModule)
+  },
+  {
+    path: 'detail-revision',
+    loadChildren: () => import('./modals/detail-revision/detail-revision.module').then( m => m.DetailRevisionPageModule)
+  },
+  {
+    path: 'add-revision',
+    loadChildren: () => import('./modals/add-revision/add-revision.module').then( m => m.AddRevisionPageModule)
+  },
+  {
+    path: 'add-vehiculos',
+    loadChildren: () => import('./modals/add-vehiculos/add-vehiculos.module').then( m => m.AddVehiculosPageModule)
+  },
+  {
+    path: 'add-conductores',
+    loadChildren: () => import('./modals/add-conductores/add-conductores.module').then( m => m.AddConductoresPageModule)
   }
 ];
 @NgModule({

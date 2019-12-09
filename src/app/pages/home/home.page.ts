@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { $ } from 'protractor';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.page.scss'],
 })
 export class HomePage implements OnInit {
-
+   collapse: false;
   constructor() { }
 
+  variable;
+  coll = 0;
+
   ngOnInit() {
+  }
+
+  collapseE(){
+    
+  
   }
 
 }

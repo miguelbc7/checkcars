@@ -161,4 +161,36 @@
     }
 }
 
+.modalRevision{
+    .modal-wrapper{
+        height: 400px;
+        top: 20%;
+        position: absolute;
+        display: block;
+        width: 90%;
+        border-radius: 10px;
+    }
+}
 
+.modalDetailsRevision{
+    .modal-wrapper{
+        height: 380px;
+        top: 20%;
+        position: absolute;
+        display: block;
+        width: 90%;
+        border-radius: 10px;
+    }
+}
+
+
+.modalForm{
+    .modal-wrapper{
+        height: 90%;
+        top: 5%;
+        position: absolute;
+        display: block;
+        width: 90%;
+        border-radius: 10px;
+    }
+}
