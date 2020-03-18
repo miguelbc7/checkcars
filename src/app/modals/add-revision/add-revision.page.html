@@ -2,12 +2,11 @@
     <div class="bodyy">
         <ion-list>
             <div  *ngFor="let item of data; index as i;">
-                <h5 class="separateTitle">{{item.title}}</h5>
+                <h5 class="separateTitle">{{ item.title }}</h5>
                 <div class="items" *ngFor="let y of data[i].section">
-                    <ion-label>{{y.concept}}</ion-label>
-                    <ion-toggle mode="ios" [(ngModel)]="y.id" (ionChange)="updateItem(y.id)" checked="false"></ion-toggle>
-                   <!--  <ion-checkbox  mode="ios" slot="end"></ion-checkbox> -->
-                    <div class="textareaEdit" *ngIf="y.status">
+                    <ion-label>{{ y.concept }}</ion-label>
+                    <ion-toggle mode="ios" (ionChange)="y.status = !y.status;" [checked]="y.status"></ion-toggle>
+                    <div class="textareaEdit" *ngIf="!y.status">
                         <ion-textarea></ion-textarea>
                     </div>
                 </div>
